@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :blogs
+
+  get "home1" => "home#home"
+  get "about" => "home#about"
+  get "contact_us" => "home#contact_us"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
